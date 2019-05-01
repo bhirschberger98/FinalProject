@@ -4,9 +4,11 @@ ExpressionTree::ExpressionTree(string expression) :BinaryTree() {
 	expressionToTree(expression);
 }
 
-ExpressionTree::~ExpressionTree(){
-
+ExpressionTree::~ExpressionTree() {
+	//calls super destructor
 }
+
+
 
 void ExpressionTree::expressionToTree(string expression) {
 	Node<char>* tmp = root;
@@ -41,7 +43,7 @@ void ExpressionTree::expressionToTree(string expression) {
 	}
 }
 //recursively prints out expression based on inorder Traversal
-void ExpressionTree::printExpression(Node<char>* node) {
+void ExpressionTree::printExpression(Node<char> * node) {
 	if (node != NULL) {
 		if (node->data == '+' || node->data == '-' ||
 			node->data == '*' || node->data == '/' || node->data == '–') {

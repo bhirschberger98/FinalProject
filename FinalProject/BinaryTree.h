@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 
 using namespace std;
@@ -18,8 +17,8 @@ private:
 	void deallocateMemory(Node<char>* node);
 protected:
 	Node<char>* root;
-	Node<char>* createNode(Node<char>* parent);
 	int size_ = 1;
+	Node<char>* createNode(Node<char>* parent);
 public:
 	BinaryTree();
 	int size();
