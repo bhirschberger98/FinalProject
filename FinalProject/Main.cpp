@@ -16,6 +16,5 @@ int main() {
 	cout << endl << "Postorder: ";
 	tree.postOrderTraversal();
 	cout << endl;
-	tree.~ExpressionTree();
 	return 0;
 }
