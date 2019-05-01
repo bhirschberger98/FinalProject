@@ -8,12 +8,10 @@ ExpressionTree::~ExpressionTree() {
 	//calls super destructor
 }
 
-
-
 void ExpressionTree::expressionToTree(string expression) {
 	Node<char>* tmp = root;
+	this->size_ = 1;
 	for (int i = 0; i < expression.length(); i++) {
-		//char x = expression[i];
 		switch (expression[i]) {
 		case '(':
 			//creates two new nodes with the current node as the parrent

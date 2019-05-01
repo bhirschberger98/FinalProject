@@ -1,4 +1,5 @@
 #include "BinaryTree.h"
+
 //recursively deletes nodes based on postorder traversal
 void BinaryTree::deallocateMemory(Node<char>* node) {
 	if (node != NULL) {

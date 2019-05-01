@@ -16,5 +16,28 @@ int main() {
 	cout << endl << "Postorder: ";
 	tree.postOrderTraversal();
 	cout << endl;
+	cout << "Size:" << tree.size() << endl;
+	tree.expressionToTree("((6+5)-(4+3))");
+	cout << "Expression: ";
+	tree.treeToExpression();
+	cout << endl << "In order: ";
+	tree.inOrderTraversal();
+	cout << endl << "Preorder: ";
+	tree.preOrderTraversal();
+	cout << endl << "Postorder: ";
+	tree.postOrderTraversal();
+	cout << endl;
+	cout << "Size:" << tree.size() << endl;
+	tree.expressionToTree("(3*((4-8)+4))");
+	cout << "Expression: ";
+	tree.treeToExpression();
+	cout << endl << "In order: ";
+	tree.inOrderTraversal();
+	cout << endl << "Preorder: ";
+	tree.preOrderTraversal();
+	cout << endl << "Postorder: ";
+	tree.postOrderTraversal();
+	cout << endl;
+	cout << "Size:" << tree.size() << endl;
 	return 0;
 }
